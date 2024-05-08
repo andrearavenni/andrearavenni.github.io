@@ -1911,6 +1911,13 @@ header.major h2+p {
 	margin-top: -1.25em;
 }
 
+header.major p {
+	color: #777;
+	font-size: 1.25em;
+	font-weight: 500;
+	margin-top: -1.25em;
+}
+
 /* Form */
 
 form {
@@ -3341,7 +3348,17 @@ input[type="button"]:disabled,
 	}
 
 	header.major h2+p {
-		font-size: 1.5em;
+		color: #777;
+		font-size: 1.25em;
+		font-weight: 500;
+		margin-top: -1.25em;
+	}
+
+	header.major p {
+		color: #777;
+		font-size: 1.25em;
+		font-weight: 500;
+		margin-top: -1.75em;
 	}
 
 	/* Features */
