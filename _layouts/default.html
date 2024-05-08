@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<title>{{page.title}}</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!-- <link rel="stylesheet" href="assets/css/academicons.min.css" /> -->
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<body class="is-preload">
+
+    <section id="header">
+        <!-- <header>
+            <div id=affiliation></div>
+        </header> -->
+
+        {% if page.has_nav_propic %}
+        <header>
+            <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+            <h4 id="logo"><a href="index.html">Andrea Ravenni</a></h4>
+            <p>
+                {{site.position}}<br />
+                {{site.affiliation1}}<br />
+                {{site.affiliation2}}
+            </p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html#About">About me</a></li>
+                <li><a href="index.html#Projects">Projects</a></li>
+                <li><a href="index.html#CV">CV</a></li>
+                <li><a href="index.html#Links">Links</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        {% else %}
+        <nav id="nav">
+            <ul>
+                <li><a href="#About" class="active">About me</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="#Links">Links</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        {% endif %}
+
+        <footer>
+            <div id=social></div>
+            <ul class="icons">
+                <li><a href="https://inspirehep.net/authors/1621072" class="ai ai-inspire ai-lg"
+                        style="vertical-align: text-top;"></a></li>
+                <!-- <li><a href="https://github.com/andrearavenni" class="icon brands fa-github"><span
+                            class="label">Github</span></a></li> -->
+                <li><a href="https://www.linkedin.com/in/andrea-ravenni-a925b7215/"
+                        class="icon brands fa-linkedin"><span class="label">Github</span></a></li>
+                <li><a href="{{site.email}}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </footer>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <div id=myheader></div>
+
+
+        <!-- Main -->
+        <div id="main">
+            <div class="image main" data-position="center">
+                <!--<img src="images/Telescope.jpg" alt="" />-->
+                <img src="images/Our_galaxy_s_heart.jpg" alt="" />
+            </div>
+
+            {{content}}
+
+        </div>
+
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>© Andrea Ravenni.</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                    <li>Photo: <a
+                            href="https://www.esa.int/ESA_Multimedia/Images/2018/05/Our_galaxy_s_heart">ESO/ATLASGAL
+                            consortium/Planck</a></li>
+                    <!--								<li>Photo: <a href="https://www.esa.int/ESA_Multimedia/Images/2017/02/Astronomical_cooperation">ESA/Hubble & NASA, T. Kitayama (Toho University, Japan)</a></li> -->
+                </ul>
+            </div>
+        </section>
+
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
